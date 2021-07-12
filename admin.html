@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Administrator - Simplified CMS</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="robots" content="noindex, nofollow">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-dark bg-dark">
+			<a href="index.html" class="navbar-brand">Simplified CMS</a>
+		</nav><br>
+		<div class="container-fluid">
+			<!-- Administrator -->
+			<div id="home" class="container-page">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item active" aria-current="page">Administrator</li>
+					</ol>
+				</nav><br>
+				<p>
+					<a href="javascript:chgPage('edit')" class="btn btn-outline-dark" style="width: 25%;padding: 20px 0;">Edit Page</a><br>
+				</p>
+				<p>
+					<a href="javascript:chgPage('info')" class="btn btn-outline-dark" style="width: 25%;padding: 20px 0;">Information</a>
+				</p>
+			</div>
+			
+			<!-- Edit Page -->
+			<div id="edit" class="container-page">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="javascript:chgPage('home')">Administrator</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Edit Page</li>
+					</ol>
+				</nav>
+				<p>
+					<form method="post" action="CMSUpdate.php">
+						<textarea class="form-control" name="htmlbox" id="htmlbox" rows="20"></textarea><br>
+						<input type="password" name="passwd" placeholder="Password" class="form-control"><br>
+						<input type="submit" class="btn btn-outline-dark" value="Submit">
+					</form>
+				</p>
+			</div>
+			
+			<!-- Information Page -->
+			<div id="info" class="container-page">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="javascript:chgPage('home')">Administrator</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Information</li>
+					</ol>
+				</nav>
+				<p>
+					<b>Simplified CMS</b><br>
+					Ver.1.0<br>
+					Copyright (c) 2020, 2021 Sora Arakawa<br>
+					Licensed under the MIT License
+				</p><br>
+				<p>
+					<b>Bootstrap</b><br>
+					The MIT License (MIT)<br><br>
+
+					Copyright (c) 2011-2020 Twitter, Inc.<br>
+					Copyright (c) 2011-2020 The Bootstrap Authors<br><br>
+
+					Permission is hereby granted, free of charge, to any person obtaining a copy<br>
+					of this software and associated documentation files (the "Software"), to deal<br>
+					in the Software without restriction, including without limitation the rights<br>
+					to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br>
+					copies of the Software, and to permit persons to whom the Software is<br>
+					furnished to do so, subject to the following conditions:<br><br>
+
+					The above copyright notice and this permission notice shall be included in<br>
+					all copies or substantial portions of the Software.<br><br>
+
+					THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br>
+					IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br>
+					FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br>
+					AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br>
+					LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br>
+					OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br>
+					THE SOFTWARE.
+				</p><br>
+				<p>
+					<b>jQuery</b><br>
+					Copyright jQuery Foundation and other contributors<br>
+					Released under the MIT license<br>
+					http://jquery.org/license
+				</p><br>
+			</div>
+		</div>
+	</body>
+</html>
