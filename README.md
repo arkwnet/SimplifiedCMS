@@ -1,0 +1,2 @@
+# SimplifiedCMS
+Simplified CMS
